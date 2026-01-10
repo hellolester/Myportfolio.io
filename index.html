@@ -1,169 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lester | IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Lester P. Bagnol | IT Portfolio</title>
 
-  <!-- Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- TOP NAVIGATION -->
-  <header class="top-nav">
-    <div class="nav-logo">LesterHx</div>
+  <!-- HERO SECTION -->
+  <section class="hero-dashboard" id="home">
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+      <label class="switch">
+        <input type="checkbox" id="darkModeSwitch">
+        <span class="slider"></span>
+      </label>
+      <span></span>
+    </div>
 
-    <nav class="nav-links">
-      <a href="index.html#home">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="nav-right">
-      <a href="#contact" class="nav-cta">Let’s Talk</a>
-
-      <!-- DARK MODE TOGGLE -->
-    <!--  <div class="dark-mode-toggle">
-        <label class="switch">
-          <input type="checkbox" id="darkModeSwitch" />
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>-->
-  </header>
-
-  <main class="dashboard" id="home">
-
-    <!-- PROFILE -->
-    <section class="card avatar span-4">
-      <img src="images/profile.jpg" alt="Lester Avatar" />
-      <h3>My name is Lester</h3>
-      <p>Aspiring IT Professional</p>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="card about span-4" id="about">
-      <h4>About Me</h4>
-      <p>
-        Aspiring IT professional with experience in Helpdesk and NOC support.
-        Skilled in troubleshooting, system monitoring, and basic networking.
-        Focused on reliability, documentation, and user support.
-      </p>
-    </section>
-
-    <!-- EXPERIENCE TABS -->
-    <section class="card tabs span-4">
-      <h4>Expertise</h4>
-
-      <nav class="tabs-nav">
-        <button class="tab-btn active" data-tab="experience">Experience</button>
-        <button class="tab-btn" data-tab="support">Support</button>
-        <button class="tab-btn" data-tab="networking">Networking</button>
-      </nav>
-
-      <div class="tab-content active" id="experience">
-        <ul>
-          <li>NOC Support – 1 Year</li>
-          <li>Helpdesk Support – 1 Year & 1 month</li>
-          <li>UI/UX Design – Internship (600hrs)</li>
-        </ul>
+    <!-- Center Content -->
+    <div class="hero-center-content animate-on-scroll">
+      <!-- Text -->
+      <div class="hero-text-block">
+        <div class="hero-subtext">Be The</div>
+        <div class="hero-main-text">DIFFERENCE</div>
       </div>
 
-      <div class="tab-content" id="support">
-        <ul>
-          <li>Hardware & Software Troubleshooting</li>
-          <li>Ticketing Systems (Jira, Zendesk)</li>
-          <li>User Account Management</li>
-        </ul>
+      <!-- Avatar -->
+      <div class="hero-avatar-container">
+        <img src="images/123.png" 
+             alt="John Lester Avatar" 
+             class="hero-avatar floating-3d">
       </div>
+    </div>
 
-      <div class="tab-content" id="networking">
-        <ul>
-          <li>TCP/IP & DNS</li>
-          <li>LAN / WAN</li>
-          <li>Network Monitoring</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section class="card skills span-3">
-      <h4>Skills</h4>
-      <div class="tags">
-        <span>IT Troubleshooting</span>
-        <span>System Monitoring</span>
-        <span>Networking</span>
-        <span>User Support</span>
-      </div>
-    </section>
+  <!-- ABOUT -->
+  <section class="section card animate-on-scroll" id="about">
+    <h2>About Me</h2>
+    <p>I am John lester Bagnol</p>
+    <p>Aspiring IT professional with hands-on experience in Helpdesk and NOC support. Skilled in troubleshooting hardware, software, and network issues, system monitoring, and basic networking concepts. Highly focused on reliability, accurate documentation, and delivering responsive user support, with a strong commitment to continuous learning and operational excellence.</p>
+  </section>
 
-    <!-- SYSTEMS -->
-    <section class="card systems span-3">
-      <h4>Systems</h4>
-      <div class="tags">
-        <span>Windows</span>
-        <span>Linux</span>
-        <span>Active Directory</span>
-        <span>Microsoft 365</span>
-      </div>
-    </section>
+  <!-- EXPERIENCE -->
+  <section class="section card animate-on-scroll" id="experience">
+    <h2>Experience</h2>
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="noc">NOC Support</button>
+      <button class="tab-btn" data-tab="helpdesk">IT Helpdesk</button>
+      <button class="tab-btn" data-tab="uiux">UI/UX Design</button>
+    </div>
 
-    <!-- CERTIFICATIONS -->
-    <section class="card certifications span-3">
-      <h4>Certifications</h4>
+    <div class="tab-content active" id="noc">
       <ul>
-        <li>CCNA (Planned)</li>
-        <li>Azure (Planned)</li>
+        <li><strong>One Intranet Corporation, Taytay Rizal</strong> – NOC Support Specialist (Oct 2025 - Present)</li>
+        <li>Monitored network operations for uptime and performance</li>
+        <li>Responded to alerts and escalated complex issues</li>
+        <li>Collaborated with IT teams to maintain network security</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- TOOLS -->
-    <section class="card tools span-3">
-      <h4>Tools</h4>
-      <div class="tags">
-        <span>Figma</span>
-        <span>AnyDesk</span>
-        <span>TeamViewer</span>
-        <span>Mikrotik</span>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="card projects span-6" id="projects">
-      <h4>Projects</h4>
+    <div class="tab-content" id="helpdesk">
       <ul>
-        <li>Small office network setup using Mikrotik & monitoring tools</li>
-        <li>Helpdesk ticket system improvement</li>
-        <li>UI/UX redesign for an internal web app</li>
+        <li><strong>SMARTPETRO INC., Makati City</strong> – IT Helpdesk Support (Sept 2024 - Oct 2025)</li>
+        <li>Delivered hardware, software, and network support</li>
+        <li>Managed customer tickets via TeamViewer, AnyDesk, RDP</li>
+        <li>Monitored system performance and ensured efficient operations</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- EDUCATION -->
-    <section class="card education span-3">
-      <h4>Education</h4>
-      <p>Information Technology / Web & Mobile Development</p>
-    </section>
+    <div class="tab-content" id="uiux">
+      <ul>
+        <li><strong>8 Box Solution Inc., Ortigas, Pasig City</strong> – UI/UX Design Intern (Jan 2024 - April 2024)</li>
+        <li>Designed user interfaces to improve engagement</li>
+        <li>Collaborated with cross-functional teams</li>
+        <li>Stayed updated with design trends and best practices</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- AVAILABILITY -->
-    <section class="card availability span-3">
-      <h4>Availability</h4>
-      <p>Open to Junior NOC Engineer & IT roles</p>
-    </section>
+  <!-- SKILLS -->
+  <section class="section card animate-on-scroll" id="skills">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span>IT Troubleshooting</span>
+      <span>System Monitoring</span>
+      <span>Networking</span>
+      <span>User Support</span>
+      <span>Windows</span>
+      <span>Linux</span>
+      <span>Active Directory</span>
+      <span>Microsoft 365</span>
+    </div>
+  </section>
 
-    <!-- CONTACT / LINKS -->
-    <section class="card links span-12" id="contact">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
-      <a href="#">Resume</a>
-    </section>
+  <!-- TOOLS -->
+  <section class="section card animate-on-scroll" id="tools">
+    <h2>UI/UX & Tools</h2>
+    <div class="tags">
+      <span>Figma</span>
+      <span>Adobe XD</span>
+      <span>Sketch</span>
+      <span>Photoshop</span>
+      <span>TeamViewer</span>
+      <span>AnyDesk</span>
+    </div>
+  </section>
 
-  </main>
+  <!-- PROJECTS -->
+  <section class="section card animate-on-scroll" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Helpdesk ticket system improvement</li>
+      <li>UI/UX redesign for an internal web app</li>
+      <li>Web-based LMS for employee training & performance tracking</li>
+      <li>IT documentation portal for SOPs and guides</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section card animate-on-scroll" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bulacan State University</strong> – BSc IT, Web & Mobile Development Specialization (July 2024)</li>
+      <li>High School: Laura Deleon Halili High School, General Academic Strand (2012-2018)</li>
+      <li>Capstone Project: “CICS ADRES: A Document Repository System for Department of CICS”</li>
+    </ul>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section card animate-on-scroll" id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Cisco Certified Network Associate (CCNA 200-301) – In Progress, Expected March 2026</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section card animate-on-scroll" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-buttons">
+      <a href="mailto:bagnol.johnlester.p@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/hellolester" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/johnlesterbagnol?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1adMXHbyaqDp6Rr5fYTpGOyIDivlYriWI/view?usp=drivesdk" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+    </div>
+  </section>
 
   <!-- JS -->
   <script src="script.js"></script>
