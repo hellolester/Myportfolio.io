@@ -1,170 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lester — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero-dashboard" id="home">
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-      <label class="switch">
-        <input type="checkbox" id="darkModeSwitch">
-        <span class="slider"></span>
-      </label>
-      <span></span>
-    </div>
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-    <!-- Center Content -->
-    <div class="hero-center-content animate-on-scroll">
-      <!-- Text -->
-      <div class="hero-text-block">
-        <div class="hero-subtext">Be The</div>
-        <div class="hero-main-text">DIFFERENCE</div>
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">LES<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Let's Talk</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="scanline"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for work</div>
+      <h1 class="hero-name">
+        <span class="line"><span>Hi, I'm</span></span>
+        <span class="line"><span class="glitch accent-word" data-text="Lester">Lester</span></span>
+      </h1>
+      <p class="hero-role">Network Operation Centre (NOC) &amp; <span>Creative Technologist</span></p>
+      <p class="hero-desc">
+        I build immersive digital experiences that live at the intersection of code and design.
+        Crafting systems that are as elegant under the hood as they are on the surface.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
       </div>
-
-      <!-- Avatar -->
-      <div class="hero-avatar-container">
-        <img src="images/123.png" 
-             alt="John Lester Avatar" 
-             class="hero-avatar floating-3d">
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
       </div>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/18NykcD19e/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://x.com/lesterpones?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/lesterhx2?igsh=NXZkeDlhY3d5eHk3&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/johnlesterbagnol?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/hellolester" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section card animate-on-scroll" id="about">
-    <h2>About Me</h2>
-    <p>I am John lester Bagnol, Aspiring IT professional with hands-on experience in Helpdesk and NOC support. Skilled in troubleshooting hardware, software, and network issues, system monitoring, and basic networking concepts. Highly focused on reliability, accurate documentation, and delivering responsive user support, with a strong commitment to continuous learning and operational excellence.</p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section card animate-on-scroll" id="experience">
-    <h2>Experience</h2>
-    <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="noc">NOC Support</button>
-      <button class="tab-btn" data-tab="helpdesk">IT Helpdesk</button>
-      <button class="tab-btn" data-tab="uiux">UI/UX Design</button>
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-img-frame">
+      <img src="lester.jpeg" alt="Lester" class="about-photo" />
+      <div class="about-corner tl"></div>
+      <div class="about-corner tr"></div>
+      <div class="about-corner bl"></div>
+      <div class="about-corner br"></div>
     </div>
-
-    <div class="tab-content active" id="noc">
-      <ul>
-        <li><strong>One Intranet Corporation, Taytay Rizal</strong> – NOC Support Specialist (Oct 2025 - Present)</li>
-        <li>Monitored network operations for uptime and performance</li>
-        <li>Responded to alerts and escalated complex issues</li>
-        <li>Collaborated with IT teams to maintain network security</li>
-      </ul>
-    </div>
-
-    <div class="tab-content" id="helpdesk">
-      <ul>
-        <li><strong>SMARTPETRO INC., Makati City</strong> – IT Helpdesk Support (Sept 2024 - Oct 2025)</li>
-        <li>Delivered hardware, software, and network support</li>
-        <li>Managed customer tickets via TeamViewer, AnyDesk, RDP</li>
-        <li>Monitored system performance and ensured efficient operations</li>
-      </ul>
-    </div>
-
-    <div class="tab-content" id="uiux">
-      <ul>
-        <li><strong>8 Box Solution Inc., Ortigas, Pasig City</strong> – UI/UX Design Intern (Jan 2024 - April 2024)</li>
-        <li>Designed user interfaces to improve engagement</li>
-        <li>Collaborated with cross-functional teams</li>
-        <li>Stayed updated with design trends and best practices</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section card animate-on-scroll" id="skills">
-    <h2>Skills</h2>
-    <div class="tags">
-      <span>IT Troubleshooting</span>
-      <span>System Monitoring</span>
-      <span>Networking</span>
-      <span>User Support</span>
-      <span>Windows</span>
-      <span>Linux</span>
-      <span>Active Directory</span>
-      <span>Microsoft 365</span>
+  </div>
+    <div class="about-text-col reveal">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">Building the future, one commit at a time</h2>
+      <p class="about-text">
+        I'am lester bagnol, Aspiring IT professional with experience in computer networking, helpdesk support, and UI/UX design. Skilled in
+        network monitoring, troubleshooting, web technologies, and remote support. 
+      </p>
+      <p class="about-text">
+        Adept at collaborating with teams to
+        ensure network performance, security, and system efficiency. Eager to contribute expertise and grow in a dynamic
+        IT-focused role.
+      </p>
+      <div class="about-details">
+        <div class="detail-item">
+          <div class="detail-label">Location</div>
+          <div class="detail-value">San Mateo Rizal, PH</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Availability</div>
+          <div class="detail-value">Open to Offers</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Focus</div>
+          <div class="detail-value">Cloud/DevOps Engineer</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Timezone</div>
+          <div class="detail-value">PHT (UTC+8)</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- TOOLS -->
-  <section class="section card animate-on-scroll" id="tools">
-    <h2>UI/UX & Tools</h2>
-    <div class="tags">
-      <span>Figma</span>
-      <span>Adobe XD</span>
-      <span>Sketch</span>
-      <span>Photoshop</span>
-      <span>TeamViewer</span>
-      <span>AnyDesk</span>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-header reveal">
+    <div class="section-tag">Capabilities</div>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card reveal">
+      <span class="skill-icon">🌐</span>
+      <div class="skill-name">Network Monitoring & NOC</div>
+      <p class="skill-desc">
+        Monitoring network infrastructure using Zabbix, LibreNMS, and Cacti. 
+        Experienced in incident detection, escalation, and basic troubleshooting.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+      <div class="skill-level">85% Proficiency</div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section class="section card animate-on-scroll" id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Helpdesk ticket system improvement</li>
-      <li>UI/UX redesign for an internal web app</li>
-      <li>Web-based LMS for employee training & performance tracking</li>
-      <li>IT documentation portal for SOPs and guides</li>
-    </ul>
-  </section>
+    <div class="skill-card reveal">
+      <span class="skill-icon">📡</span>
+      <div class="skill-name">Networking Fundamentals</div>
+      <p class="skill-desc">
+        Strong understanding of TCP/IP, subnetting, routing, and switching. 
+        Hands-on experience with MikroTik RouterOS and network configuration.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+      <div class="skill-level">80% Proficiency</div>
+    </div>
 
-  <!-- EDUCATION -->
-  <section class="section card animate-on-scroll" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Bulacan State University</strong> – BSc IT, Web & Mobile Development Specialization (July 2024)</li>
-      <li>High School: Laura Deleon Halili High School, General Academic Strand (2012-2018)</li>
-      <li>Capstone Project: “CICS ADRES: A Document Repository System for Department of CICS”</li>
-    </ul>
-  </section>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🖥️</span>
+      <div class="skill-name">System Administration</div>
+      <p class="skill-desc">
+        Experience working with Linux (Ubuntu, Rocky Linux, Kali) and Windows environments. 
+        Comfortable using CLI for system management and troubleshooting.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div>
+      <div class="skill-level">78% Proficiency</div>
+    </div>
 
-  <!-- CERTIFICATIONS -->
-  <section class="section card animate-on-scroll" id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cisco Certified Network Associate (CCNA 200-301) – In Progress, Expected March 2026</li>
-    </ul>
-  </section>
+    <div class="skill-card reveal">
+      <span class="skill-icon">☁️</span>
+      <div class="skill-name">Cloud & Virtualization</div>
+      <p class="skill-desc">
+        Familiar with AWS fundamentals and virtualization tools like VMware and VirtualBox. 
+        Able to deploy and manage virtual machines.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
+      <div class="skill-level">70% Proficiency</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <span class="skill-icon">🛠️</span>
+      <div class="skill-name">Tools & Technologies</div>
+      <p class="skill-desc">
+        Hands-on experience with Winbox, MikroTik tools, Wireshark (basic), and monitoring dashboards. 
+        Familiar with troubleshooting network issues.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div>
+      <div class="skill-level">82% Proficiency</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <span class="skill-icon">💻</span>
+      <div class="skill-name">Programming & Scripting</div>
+      <p class="skill-desc">
+        Basic knowledge of Python, MySQL, HTML, CSS, JavaScript, and PHP. 
+        Used for automation, scripting, and small projects.
+      </p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+      <div class="skill-level">65% Proficiency</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="exp-inner">
+    <div class="exp-header reveal">
+      <div class="section-tag">Work History</div>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <!-- NOC EXPERIENCE -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">2025 — Present</div>
+        <div class="timeline-role">Network Operations Center (NOC) Support</div>
+        <div class="timeline-company">One Intranet Corporation · Full-Time</div>
+        <p class="timeline-desc">
+          Performed real-time monitoring and management of network and IT infrastructure, ensuring system stability
+          and rapid response to operational incidents. Handled incident detection, analysis, and escalation to maintain continuous network availability and
+          minimize downtime
+        </p>
+        <div class="timeline-tags">
+          <span class="tag">Zabbix</span>
+          <span class="tag">LibreNMS</span>
+          <span class="tag">Cacti</span>
+          <span class="tag">TCP/IP</span>
+          <span class="tag"></span>
+          
+        </div>
+      </div>
+
+      <!-- HELPDESK -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">2024 — 2025</div>
+        <div class="timeline-role">Helpdesk Support</div>
+        <div class="timeline-company">Smartpetro Inc · Full-Time</div>
+        <p class="timeline-desc">
+          Provided technical support for hardware, software, and network-related issues. 
+          Assisted users with troubleshooting, system setup, and basic network configuration. 
+          Ensured timely resolution of tickets and maintained user satisfaction.
+        </p>
+        <div class="timeline-tags">
+          <span class="tag">Troubleshooting</span>
+          <span class="tag">Windows</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Support</span>
+        </div>
+      </div>
+
+      <!-- UI/UX INTERNSHIP -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">2024</div>
+        <div class="timeline-role">UI/UX Design Intern</div>
+        <div class="timeline-company">Web Development Company · Internship</div>
+        <p class="timeline-desc">
+          Designed user interfaces and improved user experience for web applications. 
+          Created wireframes and prototypes using Figma and collaborated with developers 
+          to ensure design consistency and usability.
+        </p>
+        <div class="timeline-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div class="section-tag">Selected Work</div>
+    <h2 class="section-title">Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PHPNuxBill -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="--c1:#001a2e;--c2:#001014;"></div>
+        <div class="project-thumb-grid"></div>
+        <div class="project-num">01</div>
+        <div class="project-thumb-icon">🌐</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">PHPNuxBill Installation & Configuration</div>
+        <p class="project-desc">
+          Installed and configured PHPNuxBill for ISP billing and user management. 
+          Set up database, user authentication, and integrated basic network settings 
+          for hotspot and bandwidth control.
+        </p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Networking</span>
+          </div>
+          <a href="#" class="project-link">View →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LibreNMS -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="--c1:#0a1a00;--c2:#001410;"></div>
+        <div class="project-thumb-grid"></div>
+        <div class="project-num">02</div>
+        <div class="project-thumb-icon">📡</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">LibreNMS Monitoring Setup</div>
+        <p class="project-desc">
+          Deployed LibreNMS for network monitoring using SNMP. 
+          Added and monitored network devices, configured alerting, 
+          and analyzed bandwidth and device performance.
+        </p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="tag">LibreNMS</span>
+            <span class="tag">SNMP</span>
+            <span class="tag">Linux</span>
+          </div>
+          <a href="#" class="project-link">View →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zabbix -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="--c1:#1a0a00;--c2:#140010;"></div>
+        <div class="project-thumb-grid"></div>
+        <div class="project-num">03</div>
+        <div class="project-thumb-icon">🖥️</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Zabbix Server Monitoring</div>
+        <p class="project-desc">
+          Installed and configured Zabbix server for monitoring systems and services. 
+          Set up hosts, triggers, dashboards, and alerts for real-time monitoring 
+          and incident detection.
+        </p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="tag">Zabbix</span>
+            <span class="tag">Monitoring</span>
+            <span class="tag">Linux</span>
+          </div>
+          <a href="#" class="project-link">View →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UI/UX -->
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="project-thumb-bg" style="--c1:#1a001a;--c2:#000d1a;"></div>
+        <div class="project-thumb-grid"></div>
+        <div class="project-num">04</div>
+        <div class="project-thumb-icon">🎨</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">UI/UX Design Projects</div>
+        <p class="project-desc">
+          Designed web interfaces and user experiences using Figma. 
+          Created wireframes, prototypes, and responsive layouts 
+          focused on usability and clean design.
+        </p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Prototyping</span>
+          </div>
+          <a href="#" class="project-link">View →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- CONTACT -->
-  <section class="section card animate-on-scroll" id="contact">
-    <h2>Contact</h2>
-    <div class="contact-buttons">
-      <a href="mailto:bagnol.johnlester.p@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://github.com/hellolester" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/johnlesterbagnol?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-      <a href="https://drive.google.com/file/d/1adMXHbyaqDp6Rr5fYTpGOyIDivlYriWI/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="contact-headline">
+          Let's build something <span class="glow-text">great</span> together.
+        </h2>
+        <p class="contact-sub">
+        </p>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-input" type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="submitBtn">Send Message</button>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+      <div class="contact-links reveal">
+        <a href="mailto:lester@example.com" class="contact-link">
+          <span class="contact-link-icon">✉️</span> bagnol.johnlester.p@gmail.com
+        </a>
+        <a href="https://github.com" target="_blank" class="contact-link">
+          <span class="contact-link-icon">🐙</span> GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💼</span> LinkedIn
+        </a>
+        <a href="https://twitter.com" target="_blank" class="contact-link">
+          <span class="contact-link-icon">🐦</span> Twitter
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">LES<span>.</span></div>
+    <div>Designed &amp; Built by <strong>Lester</strong></div>
+    <div id="footer-year"></div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
